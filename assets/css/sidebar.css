@@ -1,0 +1,98 @@
+        :root {
+            --sidebar-bg: #343a40;
+            --sidebar-color: #fff;
+            --sidebar-active-bg: #007bff;
+            --sidebar-hover-bg: #495057;
+        }
+        
+        body {
+            overflow-x: hidden;
+        }
+        
+        /* Sidebar styling */
+        .sidebar {
+            height: 100vh;
+            background: var(--sidebar-bg);
+            color: var(--sidebar-color);
+            position: fixed;
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+        
+        .sidebar .nav-link {
+            color: var(--sidebar-color);
+            margin-bottom: 5px;
+            border-radius: 5px;
+            padding: 10px 15px;
+        }
+        
+        .sidebar .nav-link:hover {
+            background: var(--sidebar-hover-bg);
+        }
+        
+        .sidebar .nav-link.active {
+            background: var(--sidebar-active-bg);
+        }
+        
+        .sidebar .nav-link i {
+            margin-right: 10px;
+        }
+        
+        /* Admin profile */
+        .admin-profile {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .admin-profile img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(255,255,255,0.2);
+            margin-bottom: 10px;
+        }
+        
+        /* Main content */
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+        
+        /* Cards */
+        .info-card {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+        }
+        
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .info-card .card-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .sidebar {
+                margin-left: -250px;
+            }
+            
+            .sidebar.active {
+                margin-left: 0;
+            }
+            
+            .main-content {
+                margin-left: 0;
+            }
+            
+            .main-content.active {
+                margin-left: 250px;
+            }
+        }

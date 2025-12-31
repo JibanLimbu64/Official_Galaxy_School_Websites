@@ -1,0 +1,135 @@
+   :root {
+      --primary: #0d6efd;
+      --primary-light: #e7f1ff;
+    }
+    
+    /* Custom Styles */
+    section {
+      padding: 80px 0;
+      position: relative;
+    }
+    
+    .underline {
+      width: 80px;
+      height: 4px;
+      background: var(--primary);
+      margin: 12px auto 30px;
+    }
+    
+    /* School About Section */
+    .school-img {
+      border-radius: 15px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      transform: rotate(-2deg);
+      transition: transform 0.5s;
+    }
+    
+    .school-img:hover {
+      transform: rotate(0deg);
+    }
+    
+    /* Bus Service Section */
+    .bus-video-container {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+      transform: scale(0.98);
+      transition: all 0.5s;
+    }
+    
+    .bus-video-container:hover {
+      transform: scale(1);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+    
+    .bus-video {
+      width: 100%;
+      height: auto;
+    }
+    
+    /* Driver Cards */
+    .driver-card {
+      transition: all 0.3s;
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      height: 100%;
+    }
+    
+    .driver-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+    
+    .driver-img {
+      height: 220px;
+      object-fit: cover;
+      width: 100%;
+    }
+    
+    /* Features Cards */
+    .feature-card {
+      border: none;
+      border-radius: 15px;
+      transition: all 0.3s;
+      height: 100%;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(13, 110, 253, 0.1);
+    }
+    
+    .feature-icon {
+      width: 70px;
+      height: 70px;
+      background: var(--primary-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+    
+    /* Map Modal */
+    #routeMap {
+      height: 500px;
+      width: 100%;
+      border-radius: 10px;
+      z-index: 1;
+    }
+    
+    /* Report Problem Modal */
+    #reportModal .modal-body {
+      padding: 2rem;
+    }
+    
+    .report-type {
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    
+    .report-type:hover {
+      background-color: var(--primary-light);
+    }
+    
+    .report-type.active {
+      background-color: var(--primary-light);
+      border-left: 4px solid var(--primary);
+    }
+    
+    /* Background Sections */
+    .bg-light-blue {
+      background-color: var(--primary-light);
+    }
+    
+    /* Animations */
+    .delay-1 { animation-delay: 0.3s; }
+    .delay-2 { animation-delay: 0.6s; }
+    .delay-3 { animation-delay: 0.9s; }
+    
+    /* Hidden Section */
+    .section-hidden {
+      display: none;
+    }
